@@ -5,21 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Your Name - Web Developer Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Your Name</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#work">My Work</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <!-- Your name box -->
+    <div class="navbar-title">Your Name</div>
+    <!-- Navigation links grid -->
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#work">My Work</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
@@ -28,36 +27,36 @@
   </section>
 
   <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-      <!-- Add your personal information here -->
-      <p>Your introduction and personal details go here.</p>
-    </section>
-
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>My Work</h2>
-      <!-- Work thumbnails with links to deployed applications -->
-      <div class="work-thumbnails">
-        <a href="link-to-application-1" class="work-item">
-          <img src="image1.jpg" alt="Application 1">
-          <h3>Application 1</h3>
-        </a>
-        <a href="link-to-application-2" class="work-item">
-          <img src="image2.jpg" alt="Application 2">
-          <h3>Application 2</h3>
-        </a>
-        <!-- Add more work items as needed -->
-      </div>
-    </section>
-
-    <!-- contact -->
+    <div class="section-grid">
+      <!-- about me -->
+      <section class="page-section" id="about">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies aliquet tellus eu consectetur. 
+          Fusce sit amet erat eu arcu eleifend venenatis. Integer nec ex eu ex vehicula facilisis. 
+          Nullam congue mauris ac eros semper, et vulputate ipsum tincidunt. Fusce id leo eget elit tempus iaculis.
+        </p>
+      </section>
+  
+      <!-- my work -->
+      <section class="page-section" id="work">
+        <h2>My Work</h2>
+        <!-- Work thumbnails grid -->
+        <div class="work-grid">
+          <!-- ... (work items) ... -->
+        </div>
+      </section>
+      
+      
+      <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
-      <!-- Add your contact information here -->
-      <p>Email: your@email.com</p>
-      <p>Phone: (123) 456-7890</p>
+      <ul class="contact-links">
+        <li><a href="mailto:michael.sm@live.co.uk">Email</a></li>
+        <li><a href="tel:(123) 456-7890">Phone</a></li>
+        <li><a href="https://github.com/novusm">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/yourusername">LinkedIn</a></li>
+      </ul>
     </section>
   </main>
 </body>
